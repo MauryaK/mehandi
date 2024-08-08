@@ -1,0 +1,58 @@
+header
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 3
+.header-top
+    padding: 8px 0
+    background: $white
+    .flex
+        align-items: center
+        justify-content: space-between
+    .logo
+        width: 250px
+        overflow: hidden
+        a
+            display: block
+            margin-top: -13px
+            img
+                display: block
+                max-width: 200px
+
+.header-bottom
+    background: $green
+    padding: 5px 0
+    .flex
+        justify-content: space-between
+        align-items: center
+.nav
+    ul
+        display: flex
+        li
+            a         
+                display: block    
+                color: $white
+                padding: 10px
+                font-weight: 300
+            &:not(:last-child)
+                margin-right: 15px
+.rightnav
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    gap: 0 10px
+    a.icon
+        width: 35px
+        height: 35px
+        border-radius: 35px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center 
+        background: trnsparent
+        transition: .5s ease
+        img
+            width: auto
+            height: 20px
+                       

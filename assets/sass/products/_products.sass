@@ -1,0 +1,237 @@
+.produInSecA
+    padding: 60px 0
+    .heading
+        max-width: 923px
+        margin: 0 auto
+        margin-bottom: 60px
+
+.productInCard        
+    .item
+        padding: 10px
+    .card
+        display: block
+        border-radius: 30px
+        border: 1px solid #C4C4C4
+        .img
+            position: relative
+            img
+                width: 100%
+                display: block
+        .content
+            padding: 15px
+            text-align: center
+            .cardTit
+                color: $green
+                font-size: 26px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.78px
+            p
+                color: #7A7A7A
+                font-size: 18px
+                font-style: normal
+                font-weight: 600
+                line-height: 150% /* 27px */
+                margin-bottom: 20px
+            .button
+                border-color: $green
+                color: $green
+                display: inline-block
+                margin-bottom: 15px
+.produInSecB
+    padding: 60px 0
+    .heading
+        margin-bottom: 60px
+
+.prdiStyA
+    .col1  
+        flex: 0 1 40%
+        max-width: 40%
+        width: 100%      
+    .col2        
+        flex: 0 1 60%
+        max-width: 60%
+        width: 100%     
+        padding-left: 45px
+    .img
+        position: relative
+        background: $black
+        line-height: 0
+        border-radius: 40px
+        img
+            opacity: .8
+            width: 100% 
+    .content
+        h4
+            color: $green
+            font-size: 32px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+            margin-bottom: 20px
+            letter-spacing: 0.96px
+        p
+            color: #7A7A7A
+            font-size: 18px
+            font-style: normal
+            font-weight: 600
+            line-height: 150% /* 27px */
+            letter-spacing: 0.54px
+            margin-bottom: 20px
+        .button
+            border-color: $green
+            color: $green
+            display: inline-block
+    .flex
+        &:nth-child(even)
+            flex-direction: row-reverse
+            margin-top: 65px
+            .col2
+                padding-right: 45px
+                padding-left: 0
+.produInSecC
+    padding: 60px 0
+    .heading
+        margin-bottom: 30px            
+    .tabGal
+        display: flex
+        gap: 0 15px
+        margin-bottom: 35px
+        .button
+            color: $green
+            border-color: $green
+            cursor: pointer
+            &:hover,&.active
+                background: $green 
+                color: $white              
+.photogal
+    .flex
+        position: relative
+    .col
+        &:first-child
+            width:  501px
+        &:nth-child(2)
+            flex: 0 1 calc(100% - 501px)
+            max-width: calc(100% - 501px)
+        
+    a
+        display: block
+        line-height: 0
+        padding: 3px
+        height: 100%
+        overflow: hidden
+        img
+            width: 100%
+    .flex.fgrd
+        .col
+            &:first-child
+                flex: 0 1 52.5%
+                max-width: 52.5%
+            &:nth-child(2)
+                flex: 0 1 47.5%
+                max-width: 47.5%
+                height: 50%
+            &:nth-child(3)
+                flex: 0 1 47.5%
+                max-width: 47.5%
+                position: absolute
+                width: 100%
+                bottom: 0
+                right: 0
+                height: 49%
+
+.produInSecD
+    padding: 130px 0
+    background: url(../images/p12.png)
+    background-size: cover
+    position: relative
+    &.bgb
+        background: url(../images/bgb.jpg)
+        background-size: cover
+
+    &::before
+        content: ""
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background: $black
+        opacity: .5
+    .container
+        position: relative
+        z-index: 1
+    .heading
+        margin-bottom: 50px
+        max-width: 982px
+        h2,p
+            color: $white
+    .col
+        flex: 0 1 25%
+        max-width: 25%
+        width: 100%
+        padding: 10px
+    .card
+        position: relative
+        padding: 20px
+        padding-bottom: 25px
+        background: $white
+        border-radius: 20px
+        .icon
+            margin-bottom: 10px
+            img
+                display: block
+                max-width: 90px
+        .label
+            color: #2E522A
+            font-size: 28px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+            letter-spacing: 0.84px
+            margin-bottom: 12px
+        p
+            color: #565656
+            font-size: 18px
+            font-style: normal
+            font-weight: 300
+            line-height: normal
+            letter-spacing: 0.54px
+
+.videoGall
+    display: none
+    .col
+        flex: 0 1 33.33%
+        max-width: 33.33%
+        width: 100%
+        padding: 10px
+    .card
+        position: relative
+        .icon
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            img
+                max-width: 55px
+                display: block
+                margin: 0 auto 15px
+            p
+                color: $white
+                text-align: center
+        .img
+            position: relative
+            line-height: 0
+            border-radius: 40px
+            overflow: hidden
+            &::before
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                top: 0
+                background: $black
+                opacity: .5            

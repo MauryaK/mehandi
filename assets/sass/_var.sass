@@ -1,0 +1,14 @@
+$green: #2E522A  
+$lgreen: #8DA650  
+$black: #000
+$white: #fff
+$text: #666
+$font: 'Nunito Sans 10pt'    
+    
+@mixin mediaMax($media)
+    @media screen and (max-width: $media)
+        @content
+@mixin mediaMin($media)
+    @media screen and (min-width: $media)
+        @content
+    
