@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+<rect x="0.5" y="0.5" width="35" height="35" rx="17.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 2.18557e-08 -2.18557e-08)" fill="white"/>
+<rect x="0.5" y="0.5" width="35" height="35" rx="17.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 2.18557e-08 -2.18557e-08)" stroke="#E8E8E8"/>
+<path d="M13.5 9L22.5 18L13.5 27" stroke="#7A7A7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

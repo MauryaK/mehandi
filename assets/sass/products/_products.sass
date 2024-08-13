@@ -235,3 +235,540 @@
                 top: 0
                 background: $black
                 opacity: .5            
+
+
+
+
+.produEcom
+    padding-top: 60px
+    .col1
+        flex: 0 1 300px
+        max-width: 300px
+        width: 100%
+        padding-right: 40px                
+    .col2  
+        flex: 1    
+    h4
+        color: #2E522A
+        font-size: 30px
+        font-style: normal
+        font-weight: 800
+        line-height: normal
+        letter-spacing: 0.9px 
+.filterCard
+    display: block
+    .card
+        margin-top: 35px          
+        .cardLabel
+            position: relative
+            border-bottom: 1px solid #7A7A7A
+            margin-bottom: 20px
+            .label
+                color: #7A7A7A
+                font-size: 16px
+                font-style: normal
+                font-weight: 600
+                line-height: 150% /* 24px */
+                letter-spacing: 0.48px
+                padding: 8px 0
+                cursor: pointer
+            img
+                position: absolute
+                right: 10px
+                top: 8px
+        .dropFilter
+            .wrapDro
+                .list
+                    
+                    label  
+                        display: block
+                        position: relative
+                        cursor: pointer
+                        color: #7A7A7A
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: 150% /* 24px */
+                        letter-spacing: 0.48px  
+                        padding: 6px 0
+                        padding-left: 36px
+                    .fakebox
+                        width: 24px
+                        height: 24px 
+                        border-radius: 10px
+                        border: 1px solid #E8E8EA       
+                        position: absolute
+                        left: 0
+                        top: 6px  
+                    input
+                        display: none
+                        &:checked ~ label
+                            .fakebox
+                                background: $lgreen url(../icons/check.svg)  
+                                background-repeat: no-repeat
+                                background-position: center
+
+.rangSlid       
+    padding-top: 20px     
+    .ui-widget-content 
+        .ui-state-default
+            background: $white
+            border: 3px solid $green
+            border-radius: 30px
+            top: -7px
+    .ui-slider-horizontal
+        height: 6px
+        border: 0
+        background: #f3f3f2
+        .ui-slider-range
+            background: $green
+    ul
+        display: flex
+        gap: 0 5px
+        align-items: center
+        margin-top: 25px
+        li
+            color: #7A7A7A
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150% /* 24px */
+            letter-spacing: 0.48px
+            text-align: center
+        .li
+            border-radius: 16px
+            border: 1px solid #E8E8EA
+            background: #FFF
+            padding: 13px 20px
+            max-width: 121px
+            width: 100%
+            
+.fetureFIlter
+    padding: 15px
+    .SLideFetur
+        .owl-nav
+            button
+                position: absolute
+                top: 40%
+            .owl-prev
+                left: -15px
+            .owl-next
+                right: -15px
+
+        .item
+            border-radius: 20px
+            border: 1px solid #E8E8E8
+            background: #FFF
+            overflow: hidden
+            .img
+                a
+                    display: block
+            .content
+                padding: 12px 8px
+                text-align: center
+                .prodtu
+                    color: $green
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 800
+                    line-height: normal
+                    letter-spacing: 0.48px
+                    margin-bottom: 5px
+                p
+                    color: #7A7A7A
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                    letter-spacing: 0.42px
+                    margin-bottom: 10px
+                .price
+                    margin-bottom: 15px
+                    color: #2E522A
+                    font-size: 20px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                    letter-spacing: 0.6px
+                .button
+                    border-color: #E8E8EA
+                    color: $green
+                    display: inline-block
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 112% /* 15.68px */
+                    letter-spacing: 0.28px
+                    cursor: pointer
+
+.EcomProducList                    
+    .col
+        flex: 0 1 33.33%
+        max-width: 33.33%
+        padding: 0 10px
+        margin-bottom: 40px
+    .card
+        border-radius: 20px
+        border: 1px solid #E8E8E8
+        background: #FFF
+        overflow: hidden
+        padding-bottom: 15px
+        position: relative
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15)
+        transition: .5s ease
+        .proact
+            position: absolute
+            bottom: 10px
+            left: 0
+            right: 0
+            display: flex
+            gap: 0 5px
+            padding: 0 10px
+            display: none
+            button,a
+                background: transparent
+                border: 0
+                width: 45px
+                height: 45px
+                display: flex
+                flex-direction: column
+                align-items: center
+                cursor: pointer
+                justify-content: center
+                transition: .5s ease
+                border-radius: 50px
+                &:hover
+                    background: $lgreen
+        .img
+            position: relative
+            a
+                display: block
+                position: relative
+                line-height: 0
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    height: 150px
+                    opacity: .6
+                    background: linear-gradient(to top, $black, transparent)
+                    
+                img
+                    width: 100%
+        .content
+            padding: 10px
+            .title
+                color: $green
+                font-size: 14px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.42px
+                margin-bottom: 10px
+            p
+                color: #7A7A7A
+                font-size: 14px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                letter-spacing: 0.42px
+                margin-bottom: 10px
+            .price
+                margin-bottom: 15px
+                color: #2E522A
+                font-size: 20px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                letter-spacing: 0.6px
+            .button
+                border-color: #E8E8EA
+                color: $green
+                display: inline-block
+                font-size: 14px
+                font-style: normal
+                padding: 16px 23px
+                font-weight: 700
+                line-height: 112% /* 15.68px */
+                letter-spacing: 0.28px
+                cursor: pointer
+        &:hover
+            box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15)
+            .button
+                background: $lgreen
+                color: $white
+            .proact
+                display: flex
+
+.E-prodDetailSec
+    padding: 60px 0   
+    .heading
+        margin-bottom: 45px
+    .flex             
+        .col
+            flex: 0 1 50%
+            max-width: 50%
+            width: 100%
+    .slide
+        display: flex
+        padding-left: 150px
+        position: relative
+        .slidTba
+            width: 140px
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+        .SlideDet
+            flex: 1
+            border-radius: 40px
+            overflow: hidden
+            .owl-nav
+                position: absolute
+                bottom: 15px
+                left: 0
+                right: 0
+                display: flex
+                align-items: center
+                justify-content: center
+                button
+                    width: 45px
+                    height: 45px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+.prdDetailS
+    padding-left: 25px
+    .card
+        border: 1px solid #E8E8EA
+        border-radius: 30px
+        padding: 25px
+        p
+            text-align: justify
+            margin-bottom: 20px
+        .price
+            margin-bottom: 20px
+            color: #2E522A
+            font-size: 30px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+            letter-spacing: 0.9px
+        .line
+            border-bottom: 1px solid #E8E8EA
+            margin: 30px 0
+        .title
+            margin-bottom: 10px
+            color: #2E522A
+            font-size: 18px
+            font-style: normal
+            font-weight: 800
+            line-height: 150% /* 27px */
+            letter-spacing: 0.54px
+        .cardFottr
+            display: flex
+            gap: 0 15px
+            align-items: center
+            margin-top: 30px
+            margin-bottom: 30px
+            >button
+                border: 1px solid #E8E8EA
+                color: $green
+                background: $white
+                text-align: center
+                font-size: 14px
+                font-style: normal
+                font-weight: 700
+                line-height: 112% /* 15.68px */
+                letter-spacing: 0.28px
+                padding: 15px 25px
+            
+            .addTwis
+                flex: 1
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                button
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    gap: 0 10px
+                    bottom: 0
+                    background: transparent
+                    color: #1E1E1E
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: 150% /* 24px */
+                    letter-spacing: 0.48px
+                    cursor: pointer
+.counterCard
+    border: 1px solid #E8E8EA
+    padding: 8px
+    display: flex
+    align-items: center
+    border-radius: 16px
+    button
+        background: $white
+        text-align: center
+        line-height: 0
+        cursor: pointer
+    .text
+        width: 55px
+        text-align: center                    
+.produDescSecB
+    margin-top: 55px
+    padding: 25px 0
+    .col1
+        width: 45%
+    .col2
+        width: 55%
+        padding-left: 35px
+    .img
+        border: 1px solid #E8E8EA
+        border-radius: 40px
+        line-height: 0
+        overflow: hidden
+    .prdeSecBTab
+        .tabWrap
+            display: flex
+            gap: 0 15px
+            border-bottom: 3px solid #E8E8EA
+            justify-content: space-between
+            margin-bottom: 40px
+            .tab
+                color: $green
+                font-size: 24px
+                font-style: normal
+                font-weight: 300
+                line-height: 150% /* 36px */
+                letter-spacing: 0.72px
+                position: relative
+                padding: 8px 0
+                cursor: pointer
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: -4px
+                    background: $lgreen
+                    height: 5px
+                    width: 0%
+                    left: 0
+                &.current
+                    font-weight: 800
+                    &::after
+                        width: 100%
+    .prdeSecBTab
+        height: 100%
+        position: relative
+    .prdeSecBTabW
+        .text
+            color: #7A7A7A
+            font-size: 18px
+            font-style: normal
+            font-weight: 600
+            line-height: 150%
+            letter-spacing: 0.54px
+            margin-bottom: 20px
+        ul
+            li
+                color: #7A7A7A
+                font-size: 18px
+                font-style: normal
+                font-weight: 600
+                line-height: 150% /* 27px */
+                letter-spacing: 0.54px
+                padding-left: 40px
+                margin-bottom: 20px
+                position: relative
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    top: 5px
+                    width: 20px
+                    height: 20px
+                    background: url('../icons/serv.svg')
+                    background-repeat: no-repeat
+        .testimonail
+            border-radius: 40px
+            border: 1px solid #E8E8EA
+            background: #FFF
+            padding: 30px
+            .item
+                
+                .auth
+                    display: flex
+                    margin-top: 25px
+                    .autted
+                        padding-left: 20px
+                    .name
+                        color: $green
+                        font-size: 24px
+                        font-style: normal
+                        font-weight: 800
+                        line-height: normal
+                        letter-spacing: 0.72px
+                    .star
+                        display: flex
+                        margin: 2px 0
+                        img
+                            width: 25px
+                    .auId
+                        color: #537B2E
+                        font-size: 18px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: 150% /* 27px */
+                        letter-spacing: 0.54px
+        .navCuto
+            display: none
+        .testimonail.active ~ 
+            .navCuto
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                display: flex
+                align-items: center
+                gap: 0 10px
+                justify-content: center
+
+                button
+                    width: 40px
+                    height: 40px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    background: $white
+                    border-radius: 50px
+                    border: 1px solid $green
+                    cursor: pointer
+.homeSecA
+    .producCard                    
+        .slideMore
+            display: block
+            .owl-nav
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-top: 35px
+                gap: 0 10px
+                button
+                    width: 40px
+                    height: 40px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    background: $white
+                    border-radius: 50px
+                    border: 1px solid $green
+                    cursor: pointer

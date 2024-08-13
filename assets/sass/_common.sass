@@ -8,7 +8,7 @@
     border: 0
 
 html,body
-    font-family: "Nunito Sans", sans-serif
+    font-family: $font
     font-size: 16px
     line-height: 1.4
     color: $text
@@ -17,6 +17,9 @@ html,body
     font-weight: 400
     font-style: normal
     font-variation-settings: "wdth" 100, "YTLC" 500
+body.no-banner
+    main
+        margin-top: 127px
 
 .container
     max-width: 1250px
@@ -65,11 +68,14 @@ h6
 img
     max-width: 100%        
 
-input,button,textarea
+input,button,textarea, select
     font-family: $font
     font-size: 16px
     line-height: 1.4
     color: $text
+    font-weight: normal
+input[type="button"],input[type="submit"],button
+    cursor: pointer
 .flex
     display: flex
     flex-wrap: wrap
@@ -113,3 +119,73 @@ input,button,textarea
     &:hover
         border-radius: 50px
                     
+.premlink
+    background: $white
+    padding: 20px 0
+    border-bottom: 1px solid #E8E8EA
+    ul
+        display: flex
+        gap: 0 8px
+        li
+            
+            a,span       
+                display: block      
+                font-size: 18px
+                font-style: normal
+                font-weight: 600
+                line-height: 150%
+                letter-spacing: 0.54px  
+            a
+                color: #7A7A7A
+            span
+                color: $green
+                font-weight: 800 
+
+.E-productList                
+    padding: 60px 0
+    .container
+        position: relative
+        .heading
+            max-width: 1160px
+            padding-right: 180px
+        .sortPrd
+            position: absolute
+            right: 15px
+            top: 0
+            select
+                display: block
+                display: block
+                border: 1px solid #c5c5c5
+                padding: 12px 13px
+                padding-right: 35px
+                border-radius: 8px
+                color: #7A7A7A
+                font-size: 14px
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  text-indent: 1px
+  text-overflow: ''                
+.form
+    .form-group
+        position: relative
+        margin-bottom: 15px
+        .icon
+            position: absolute
+            top: 15px
+            line-height: 0
+            right: 15px
+        .form-control
+            border-radius: 16px
+            border: 1px solid #E8E8E8
+            background: #FFF
+            padding: 15px
+            width: 100%
+            color: #9F9F9F
+            font-size: 14px
+            font-style: normal
+            font-weight: 600
+            line-height: 150% /* 21px */
+            letter-spacing: normal
+            option
+                color: #666
