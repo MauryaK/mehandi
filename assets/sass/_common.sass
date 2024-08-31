@@ -246,3 +246,22 @@ select
             letter-spacing: normal
             option
                 color: #666
+
+.overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    height: 100vh
+    background: $black
+    z-index: 3  
+    opacity: 0
+    pointer-events: none
+    transition: .5s ease
+.model-active
+    height: 100vh
+    overflow: hidden
+    .overlay
+        opacity: .5
+        pointer-events: all

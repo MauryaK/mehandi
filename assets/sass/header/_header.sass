@@ -109,9 +109,141 @@ header
     position: fixed
     top: 0
     left: 0
-    width: 320px 
+    max-width: 420px 
     width: 100%
     background: $white                      
     z-index: 11
+    height: 100vh
+    transform: translateX(-420px)
+    transition: .5s ease
+    @include mediaMin(992px)
+        display: none
+    &.activeModel
+        transform: translateX(0px)
+
     .modelErap
         position: relative
+    .closeModel
+        position: absolute
+        width: 30px
+        height: 30px
+        top: 5px
+        right: 5px
+        cursor: pointer
+        z-index: 2
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        img
+            display: block
+            width: 26px
+            filter: invert(1)
+    .modelHed
+        background: $green url('../images/p3.jpg')
+        padding: 25px
+        position: relative
+        background-size: cover
+        background-position: center
+        &:before
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: #245f1d61
+            z-index: 1
+            content: ""
+            backdrop-filter: blur(5px)
+        .modelGewr
+            position: relative
+            z-index: 1
+            text-align: center
+            .icon
+                width: 45px
+                height: 45px
+                background: $white
+                margin: 0 auto
+                border-radius: 50px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                img
+                    filter: grayscale(0) brightness(0)
+                    display: block
+                    margin: 0 auto
+                    width: 20px
+            p
+                margin-top: 10px
+                color: $white
+                font-size: 14px
+                display: block
+            a
+                display: inline-block
+                color: #345d48
+                background: #fff
+                padding: 4px 14px
+                border-radius: 16px
+                font-size: 12px
+                margin-top: 5px
+    .modelNav
+        padding: 30px 15px
+        height: calc(100vh - 174px)
+        overflow-y: scroll
+        .navWrap
+            ul
+                >li
+                    display: block
+                    color: $text
+                    font-size: 25px
+                    font-weight: 600
+                    padding: 5px 0
+                    position: relative
+                    .suntr
+                        position: absolute
+                        top: 0
+                        right: 0
+                        svg
+                            width: 14px
+                            height: 14px
+                    >a 
+                        color: inherit
+                        font-size: inherit
+                        font-weight: inherit
+                    .cusdtDropNav
+                        display: none
+                        background: #f1f1f1
+                        padding: 15px 10px
+                        padding-left: 15px
+                        border-left: 2px solid $lgreen
+                        .li
+                            a
+                                display: block
+                                color: $text
+                                font-size: 14px
+                                font-weight: 300
+                                padding: 3px 0
+        .linmne
+            margin: 20px 0
+            border-top: 1px solid $black
+            opacity: .5
+        .smnave
+            ul
+                li
+                    display: block
+                    a
+                        color: $text
+                        font-size: 14px
+                        font-size: 500
+                        display: block
+                        padding: 3px 0
+    .contactin
+        margin-top: 15px
+        ul
+            display: flex
+            gap: 0 15px
+            li
+                a
+                    font-size: 14px
+                    color: #666

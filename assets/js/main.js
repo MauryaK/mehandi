@@ -54,4 +54,21 @@ $(function(){
             }
         }
     })
+
+    $(".hasdropdown").on('click', function(e){
+        e.preventDefault();
+        $(this).children('.cusdtDropNav').slideToggle();
+    })
+    
+    $(".humburger").on('click', function(e){
+        e.preventDefault();
+        $("body").addClass('model-active');
+        $(".modelHumburgerMenu").addClass('activeModel');
+    })
+    $(".close-model").on('click', function(e){
+        e.preventDefault();
+        $("body").removeClass('model-active');
+        $(".modelHumburgerMenu").removeClass('activeModel');
+    })
+    
 })
