@@ -62,6 +62,7 @@
                         <a href="" class="icon"><img src="assets/icons/user.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/wishlist.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/cart.svg" alt=""></a>
+                        <div class="humburger"><span></span></div>
                     </div>
                 </div>
             </div>
@@ -103,18 +104,23 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
                     </div>
-                    <div class="sortPrd">
-                        <select>
-                            <option value="">Sort By</option>
-                            <option value="">Sort One</option>
-                            <option value="">Sort Two</option>
-                            <option value="">Sort Three</option>
-                        </select>
+                    <div class="prodifwr">
+                        <div class="filttrig"><img src="assets/icons/filter.svg" alt=""><span>filter</span></div>
+
+                        <div class="sortPrd">
+                            <select>
+                                <option value="">Sort By</option>
+                                <option value="">Sort One</option>
+                                <option value="">Sort Two</option>
+                                <option value="">Sort Three</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="produEcom">
                         <div class="flex">
                             <div class="col1">
                                 <div class="filterAside">
+                                    <div class="closfil"><img src="assets/icons/closw.svg" alt=""></div>
                                     <div class="wrap">
                                         <h4>Categories</h4>
                                         <div class="filterCard">
@@ -206,6 +212,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="over"></div>
                             </div>
                             <div class="col2">
                                 <div class="EcomProducList">
@@ -551,6 +558,11 @@
                         items:1,
                     }
                 }
+            })
+
+            $('.closfil,.filttrig,.over').on('click', function(e){
+                e.preventDefault();
+                $('body').toggleClass('filterActive');
             })
         })
     </script>

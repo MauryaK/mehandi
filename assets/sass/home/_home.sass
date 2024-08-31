@@ -27,19 +27,34 @@
         .content
             padding-left: 30px
             max-width: 900px
+            @include mediaMax(1366px)
+                max-width: 750px
+            @include mediaMax(991px)
+                padding: 0
             h1,p
                 color: $white
             h1
                 line-height: normal
+                @include mediaMax(1366px)
+                    line-height: 1.2
+                    font-weight: 700
+                @include mediaMax(991px)
+                    margin-bottom: 15px
             p
                 margin: 25px 0 25px 0
+                @include mediaMax(991px)
+                    display: none
 
             .button
                 display: inline-block
+                @include mediaMax(675px)
+                    display: none
 
 
 .homeSecA
     padding: 60px 0 40px
+    @include mediaMax(675px)
+        padding-bottom: 20px
     .heading
         max-width: 982px
         width: 100%
@@ -95,6 +110,8 @@
 .moremr
     text-align: center
     margin-top: 55px
+    @include mediaMax(675px)
+        margin-top: 30px
     .button
         display: inline-block    
         border: 1px solid $green
@@ -104,30 +121,54 @@
 
 .homeSecB
     padding: 60px 0 40px    
+    @include mediaMax(675px)
+        padding-top: 40px
     .flex
         .col1
             flex: 0 1 35%
             max-width: 35%
             width: 100% 
+            @include mediaMax(991px)
+                flex: 0 1 100%
+                max-width: 100%
         .col2
             flex: 0 1 65%
             max-width: 65%
             width: 100% 
             padding-left: 35px
+            @include mediaMax(757px)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0
+        .img
+            img
+                @include mediaMax(757px)
+                    display: block
+                    margin: 0 auto
     .heading
         margin-bottom: 30px
+        @include mediaMax(757px)
+            margin-bottom: 12px
+            margin-top: 30px
     .content
+        @include mediaMax(757px)
+            text-align: center
         p
             color: #7A7A7A
-            font-size: 18px
             font-style: normal
+            font-size: 18px
             font-weight: 600
             line-height: 150%
             letter-spacing: 0.54px
             margin-bottom: 20px
+            @include mediaMax(1366px)
+                font-size: 16px
+                font-weight: 500
     .moremr
         text-align: left
         margin-top: 30px
+        @include mediaMax(757px)
+            text-align: center
 
 .homeSecC   
     padding: 60px 0
@@ -154,6 +195,8 @@
     .item
         padding: 25px
         position: relative
+        @include mediaMax(991px)
+            padding: 10px
         .img
             position: relative
             border-radius: 250px
@@ -179,6 +222,11 @@
             padding: 20px
             margin: 0 auto
             max-width: 230px
+            @include mediaMax(991px)
+                bottom: auto
+                top: 50%
+                max-width: 90%
+                transform: translateY(-50%)
             .title
                 color: #FFF
                 text-align: center
@@ -204,6 +252,8 @@
             left: 0
             right: 0
             z-index: 1
+            @include mediaMax(991px)
+                display: none
 
 .homeSecD
     padding: 60px 0       
@@ -243,6 +293,14 @@
             max-width: 33.33%
             width: 100%
             padding: 15px
+            @include mediaMax(757px)
+                flex: 0 1 50%
+                max-width: 50%
+            @include mediaMax(675px)
+                flex: 0 1 100%
+                max-width: 100%
+                padding-left: 0
+                padding-right: 0
     .card
         border: 1px solid $white
         border-radius: 28px
@@ -267,6 +325,8 @@
 
 .homeSecF
     padding: 60px 0  
+    @include mediaMax(675px)
+        padding: 40px 0 20px
     .heading
         margin-bottom: 60px
         h5
@@ -344,6 +404,14 @@
             max-width: 33.33%
             width: 100%
             padding: 10px
+            @include mediaMax(991px)
+                padding: 5px
+            @include mediaMax(757px)
+                flex: 0 1 50%
+                max-width: 50%
+            @include mediaMax(675px)
+                flex: 0 1 100%
+                max-width: 100%
     .card
         padding: 20px
         border-radius: 30px
@@ -351,6 +419,10 @@
         box-shadow: 0px 0px 0px 0px rgba(46, 82, 42, 0.40)
         transition: .5s ease
         border: 1px solid $lgreen
+        @include mediaMax(991px)
+            padding: 15px
+        @include mediaMax(767px)
+            text-align: center
         .qu
             color: #2E522A
             font-size: 20px
@@ -359,6 +431,8 @@
             line-height: normal
             letter-spacing: 0.6px
             margin-bottom: 12px
+            @include mediaMax(991px)
+                font-size: 16px
         .an
             color: #7A7A7A
             margin-bottom: 12px
@@ -367,6 +441,10 @@
             font-weight: 600
             line-height: normal
             letter-spacing: 0.54px
+            @include mediaMax(1366px)
+                font-size: 16px
+            @include mediaMax(991px)
+                font-size: 14px
         .button
             display: inline-block
             color: $green
@@ -439,6 +517,8 @@
 .blogCard
     .item
         padding: 15px
+        @include mediaMax(1000px)
+            padding: 15px 7px
         .card
             display: block
             border-radius: 24px
@@ -462,6 +542,8 @@
                 line-height: normal
                 letter-spacing: 0.54px
                 margin: 11px 0 18px
+                @include mediaMax(1366px)
+                    font-size: 16px
             .button
                 border-color: #7A7A7A
                 color: #2E522A

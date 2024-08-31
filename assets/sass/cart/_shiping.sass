@@ -7,9 +7,16 @@
     .col1
         width: 65%
         padding-right: 20px
+        @include mediaMax(1200px)
+            width: 100%
+            padding: 0
     .col2
         padding-left: 20px
         width: 35%
+        @include mediaMax(1200px)
+            width: 100%
+            padding: 0
+            margin-top: 25px
 
 .shpAddressA
     .card
@@ -49,6 +56,8 @@
                 line-height: normal
                 letter-spacing: normal
                 margin: 4px 0
+                @include mediaMax(1200px)
+                    font-size: 14px
             p
                 b
                     color: #353535
@@ -87,6 +96,8 @@
             .img
                 line-height: 0
                 width: 138px
+                @include mediaMax(675px)
+                    width: 68px
             .content
                 flex: 1
                 padding-left: 20px
@@ -170,12 +181,20 @@ label
         cursor: pointer
         background: $green
         padding: 15px 25px
+        @include mediaMax(675px)
+            position: static
+            margin-top: 20px
+            padding: 10px 15px
+            font-size: 14px
     .form
         padding-top: 30px
     .flex
         .col-2
             width: 50%
             padding: 0 8px
+            @include mediaMax(675px)
+                width: 100%
+                padding: 0
         .col-1
             padding: 0 8px
             width: 100%
@@ -219,6 +238,8 @@ label
         display: flex
         align-items: center
         gap: 0 15px      
+        @include mediaMax(675px)
+            display: block
         .img
             width: 115px
             height: 115px
@@ -228,8 +249,16 @@ label
             justify-content: center
             background: $white
             border-radius: 100px
+            @include mediaMax(991px)
+                width: 60px
+                height: 60px
+            @include mediaMax(675px)
+                margin: 0 auto 10px
             svg
                 display: block
+                @include mediaMax(991px)
+                    width: 32px
+                    height: 32px
         p
             color: #FFF
             text-align: center
@@ -238,3 +267,5 @@ label
             font-weight: 600
             line-height: 150% /* 30px */
             letter-spacing: normal  
+            @include mediaMax(991px)
+                font-size: 14px

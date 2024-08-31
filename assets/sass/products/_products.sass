@@ -22,18 +22,27 @@
             text-align: center
             .cardTit
                 color: $green
-                font-size: 26px
                 font-style: normal
+                font-size: 26px
                 font-weight: 800
                 line-height: normal
                 letter-spacing: 0.78px
+                @include mediaMax(991px)
+                    font-size: 18px
+                    font-weight: 600
+                    line-height: normal
+                    letter-spacing: normal
             p
                 color: #7A7A7A
-                font-size: 18px
                 font-style: normal
+                font-size: 18px
                 font-weight: 600
                 line-height: 150% /* 27px */
                 margin-bottom: 20px
+                @include mediaMax(991px)
+                    font-size: 16px
+                    font-weight: 500
+                    line-height: 1.4
             .button
                 border-color: $green
                 color: $green
@@ -49,11 +58,18 @@
         flex: 0 1 40%
         max-width: 40%
         width: 100%      
+        @include mediaMax(675px)
+            flex: 0 1 100%
+            max-width: 100%
     .col2        
         flex: 0 1 60%
         max-width: 60%
         width: 100%     
         padding-left: 45px
+        @include mediaMax(675px)
+            flex: 0 1 100%
+            max-width: 100%
+            padding: 0
     .img
         position: relative
         background: $black
@@ -63,22 +79,37 @@
             opacity: .8
             width: 100% 
     .content
+        @include mediaMax(675px)
+            padding-top: 25px
+            text-align: center
         h4
             color: $green
-            font-size: 32px
             font-style: normal
+            font-size: 32px
             font-weight: 800
             line-height: normal
-            margin-bottom: 20px
             letter-spacing: 0.96px
+            @include mediaMax(1200px)
+                letter-spacing: normal
+                font-size: 20px
+                font-weight: 600
+                margin-bottom: 12px
+            @include mediaMax(675px)
+                font-size: 18px
+                font-weight: 500
         p
             color: #7A7A7A
-            font-size: 18px
             font-style: normal
+            font-size: 18px
             font-weight: 600
             line-height: 150% /* 27px */
             letter-spacing: 0.54px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                font-size: 16px
+                font-weight: 500
+                line-height: 1.4
+                letter-spacing: normal
         .button
             border-color: $green
             color: $green
@@ -90,8 +121,12 @@
             .col2
                 padding-right: 45px
                 padding-left: 0
+                @include mediaMax(675px)
+                    padding: 0
 .produInSecC
     padding: 60px 0
+    @include mediaMax(991px)
+        padding: 30px 0 0
     .heading
         margin-bottom: 30px            
     .tabGal
@@ -109,11 +144,14 @@
     .flex
         position: relative
     .col
-        &:first-child
-            width:  501px
-        &:nth-child(2)
-            flex: 0 1 calc(100% - 501px)
-            max-width: calc(100% - 501px)
+        @include mediaMin(992px)
+            &:first-child
+                width:  501px
+            &:nth-child(2)
+                flex: 0 1 calc(100% - 501px)
+                max-width: calc(100% - 501px)
+        @include mediaMax(991px)
+            width: 50%
         
     a
         display: block
@@ -123,29 +161,37 @@
         overflow: hidden
         img
             width: 100%
+            height: 100%
+            object-fit: cover
     .flex.fgrd
         .col
-            &:first-child
-                flex: 0 1 52.5%
-                max-width: 52.5%
-            &:nth-child(2)
-                flex: 0 1 47.5%
-                max-width: 47.5%
-                height: 50%
-            &:nth-child(3)
-                flex: 0 1 47.5%
-                max-width: 47.5%
-                position: absolute
-                width: 100%
-                bottom: 0
-                right: 0
-                height: 49%
+            @include mediaMin(992px)
+                &:first-child
+                    flex: 0 1 52.5%
+                    max-width: 52.5%
+                &:nth-child(2)
+                    flex: 0 1 47.5%
+                    max-width: 47.5%
+                    height: 50%
+                &:nth-child(3)
+                    flex: 0 1 47.5%
+                    max-width: 47.5%
+                    position: absolute
+                    width: 100%
+                    bottom: 0
+                    right: 0
+                    height: 49%
+            &:last-child
+                @include mediaMax(991px)
+                    width: 100%
 
 .produInSecD
     padding: 130px 0
     background: url(../images/p12.png)
     background-size: cover
     position: relative
+    @include mediaMax(991px)
+        padding: 60px 0
     &.bgb
         background: url(../images/bgb.jpg)
         background-size: cover
@@ -172,32 +218,51 @@
         max-width: 25%
         width: 100%
         padding: 10px
+        @include mediaMax(991px)
+            flex: 0 1 50%
+            max-width: 50%
+        @include mediaMax(675px)
+            flex: 0 1 100%
+            max-width: 100%
+        
     .card
         position: relative
         padding: 20px
         padding-bottom: 25px
         background: $white
         border-radius: 20px
+        @include mediaMax(675px)
+            text-align: center
         .icon
             margin-bottom: 10px
             img
                 display: block
                 max-width: 90px
+                @include mediaMax(675px)
+                    margin: 0 auto
         .label
             color: #2E522A
-            font-size: 28px
             font-style: normal
-            font-weight: 800
             line-height: normal
+            font-size: 28px
+            font-weight: 800
             letter-spacing: 0.84px
             margin-bottom: 12px
+            @include mediaMax(1200px)
+                font-size: 18px
+                font-weight: 600
+                letter-spacing: normal
         p
             color: #565656
             font-size: 18px
-            font-style: normal
-            font-weight: 300
-            line-height: normal
             letter-spacing: 0.54px
+            font-weight: 300
+            font-style: normal
+            line-height: normal
+            @include mediaMax(1200px)
+                font-size: 16px
+                letter-spacing: normal
+                font-weight: 300
 
 .videoGall
     display: none
@@ -241,11 +306,14 @@
 
 .produEcom
     padding-top: 60px
+    >.flex
+        @include mediaMax(1200px)
+            display: block     
     .col1
         flex: 0 1 300px
         max-width: 300px
         width: 100%
-        padding-right: 40px                
+        padding-right: 40px      
     .col2  
         flex: 1    
     h4
@@ -407,6 +475,13 @@
         max-width: 33.33%
         padding: 0 10px
         margin-bottom: 40px
+        @include  mediaMax(767px)
+            flex: 0 1 50%
+            max-width: 50%
+        @include  mediaMax(520px)
+            flex: 0 1 100%
+            max-width: 100%
+
     .card
         border-radius: 20px
         border: 1px solid #E8E8E8
@@ -504,17 +579,27 @@
 
 .E-prodDetailSec
     padding: 60px 0   
+    @include mediaMax(675px)
+        padding: 30px 0   0
+
     .heading
         margin-bottom: 45px
+        @include mediaMax(675px)
+            text-align: center
     .flex             
         .col
             flex: 0 1 50%
             max-width: 50%
             width: 100%
+            @include mediaMax(991px)
+                flex: 0 1 100%
+                max-width: 100%
     .slide
         display: flex
         padding-left: 150px
         position: relative
+        @include mediaMax(1200px)
+            padding: 0
         .slidTba
             width: 140px
             position: absolute
@@ -525,6 +610,8 @@
             flex-direction: column
             align-items: center
             justify-content: center
+            @include mediaMax(1200px)
+                display: none
 
         .SlideDet
             flex: 1
@@ -547,10 +634,17 @@
                     justify-content: center
 .prdDetailS
     padding-left: 25px
+    @include mediaMax(675px)
+        padding: 0
+        margin-top: 25px
     .card
         border: 1px solid #E8E8EA
         border-radius: 30px
         padding: 25px
+        @include mediaMax(675px)
+            padding: 0
+            border: 0
+
         p
             text-align: justify
             margin-bottom: 20px
@@ -562,6 +656,8 @@
             font-weight: 800
             line-height: normal
             letter-spacing: 0.9px
+            @include mediaMax(675px)
+                font-size: 18px
         .line
             border-bottom: 1px solid #E8E8EA
             margin: 30px 0
@@ -579,6 +675,8 @@
             align-items: center
             margin-top: 30px
             margin-bottom: 30px
+            @include mediaMax(675px)
+                flex-wrap: wrap
             >button
                 border: 1px solid #E8E8EA
                 color: $green
@@ -596,6 +694,11 @@
                 display: flex
                 align-items: center
                 justify-content: flex-end
+                @include mediaMax(670px)
+                    justify-content: flex-start
+                    width: 100%
+                    flex: 0 1 100%
+                    margin-top: 20px
                 button
                     cursor: pointer
                     display: flex
@@ -627,16 +730,28 @@
 .produDescSecB
     margin-top: 55px
     padding: 25px 0
+    @include mediaMax(675px)
+        padding-bottom: 0
     .col1
         width: 45%
+        @include mediaMax(991px)
+            width: 100%
+    
     .col2
         width: 55%
         padding-left: 35px
+        @include mediaMax(991px)
+            width: 100%
+            padding: 0
     .img
         border: 1px solid #E8E8EA
         border-radius: 40px
         line-height: 0
         overflow: hidden
+        @include mediaMax(991px)
+            max-width: 320px
+            width: 100%
+            margin: 0 auto 25px
     .prdeSecBTab
         .tabWrap
             display: flex
@@ -644,6 +759,8 @@
             border-bottom: 3px solid #E8E8EA
             justify-content: space-between
             margin-bottom: 40px
+            @include mediaMax(675px)
+                gap: 0 6px
             .tab
                 color: $green
                 font-size: 24px
@@ -654,6 +771,10 @@
                 position: relative
                 padding: 8px 0
                 cursor: pointer
+                @include mediaMax(1200px)
+                    font-size: 18px
+                @include mediaMax(675px)
+                    font-size: 13px
                 &::after
                     content: ""
                     position: absolute
@@ -672,12 +793,16 @@
     .prdeSecBTabW
         .text
             color: #7A7A7A
-            font-size: 18px
             font-style: normal
+            font-size: 18px
             font-weight: 600
             line-height: 150%
             letter-spacing: 0.54px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                font-size: 14px
+                font-weight: 400
+                line-height: 1.4
         ul
             li
                 color: #7A7A7A
@@ -689,6 +814,10 @@
                 padding-left: 40px
                 margin-bottom: 20px
                 position: relative
+                @include mediaMax(1200px)
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 1.4
                 &::before
                     content: ""
                     position: absolute
@@ -717,6 +846,8 @@
                         font-weight: 800
                         line-height: normal
                         letter-spacing: 0.72px
+                        @include mediaMax(1200px)
+                            font-size: 18px
                     .star
                         display: flex
                         margin: 2px 0
@@ -772,3 +903,51 @@
                     border-radius: 50px
                     border: 1px solid $green
                     cursor: pointer
+
+
+.filterAside
+    @include mediaMax(1200px)
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        background: #fff
+        z-index: 11
+        padding: 25px
+        max-width: 320px
+        height: 100vh
+        overflow-y: scroll
+        transform: translateX(-320px)
+        transition: .5s ease
+    .closfil
+        @include mediaMin(1202px)
+            display: none
+        position: absolute
+        top: 10px
+        right: 10px
+        width: 35px
+        height: 35px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        img
+            width: 30px
+    ~.over
+        position: fixed
+        z-index: 10
+        background: #000
+        opacity: 0
+        width: 100%
+        height: 100%
+        top: 0
+        transition: .5s ease
+        pointer-events: none
+body.filterActive
+    .filterAside
+        @include mediaMax(1200px)
+            transform: translate(0)
+        ~.over
+            opacity: .5
+            pointer-events: all

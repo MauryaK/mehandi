@@ -62,6 +62,7 @@
                         <a href="" class="icon"><img src="assets/icons/user.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/wishlist.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/cart.svg" alt=""></a>
+                        <div class="humburger"><span></span></div>
                     </div>
                 </div>
             </div>
@@ -156,12 +157,12 @@
                             <div class="col2">
                                 <div class="prdeSecBTab">
                                     <div class="tabWrap">
-                                        <div class="tab current" data-tab="testimonail">Description</div>
-                                        <div class="tab" data-tab="prodDescTab">How to Use?</div>
-                                        <div class="tab" data-tab="prodhtuseTab">Customer Review</div>
+                                        <div class="tab current" data-tab="prodDescTab">Description</div>
+                                        <div class="tab" data-tab="prodhtuseTab">How to Use?</div>
+                                        <div class="tab" data-tab="testimonail">Customer Review</div>
                                     </div>
                                     <div class="prdeSecBTabW">
-                                        <div class="itemTab testimonail active" style="display: block;">
+                                        <div class="itemTab testimonail " style="display: none;">
                                             <div class="owl-carousel testSLid">
                                                 <div class="item">
                                                     <div class="text">Testimonials or quotes from your customers are one of the most common forms of customer reviews. You’re most likely to find them on a company website, typically on the homepage or in their marketing materials</div>
@@ -216,7 +217,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="itemTab prodDescTab" style="display: none;">
+                                        <div class="itemTab prodDescTab active" style="display: block;">
                                             <div class="content">
                                                 <div class="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
                                                     roots in a piece of classical Latin literature from 45 BC, making it over 2000
@@ -517,12 +518,16 @@
                 navText: [nav1[0], nav1[1]],
                 responsive:{
                     0:{
-                        items:1,
+                        items:1.1,
                     },
-                    500:{
-                        items:1,
+                    520:{
+                        items:2.1,
                     },
-                    1000:{
+                    
+                    768:{
+                        items:3,
+                    },
+                    1200:{
                         items:4,
                     }
                 }
@@ -560,8 +565,8 @@
                     0:{
                         items:1,
                     },
-                    500:{
-                        items:1,
+                    768:{
+                        items:1.2,
                     },
                     1000:{
                         items:1,

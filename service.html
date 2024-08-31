@@ -59,6 +59,7 @@
                         <a href="" class="icon"><img src="assets/icons/user.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/wishlist.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/cart.svg" alt=""></a>
+                        <div class="humburger"><span></span></div>
                     </div>
                 </div>
             </div>
@@ -287,8 +288,8 @@
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
                     </div>
                     <div class="producCard">
-                        <div class="flex">
-                            <div class="col">
+                        <div class="owl-carousel slidePrdScA">
+                            <div class="item">
                                 <a href="" class="card">
                                     <div class="img"><img src="assets/images/img1.jpg" alt=""></div>
                                     <div class="content">
@@ -300,7 +301,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col">
+                            <div class="item">
                                 <a href="" class="card">
                                     <div class="img"><img src="assets/images/img2.jpg" alt=""></div>
                                     <div class="content">
@@ -312,7 +313,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col">
+                            <div class="item">
                                 <a href="" class="card">
                                     <div class="img"><img src="assets/images/img3.png" alt=""></div>
                                     <div class="content">
@@ -324,7 +325,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col">
+                            <div class="item">
                                 <a href="" class="card">
                                     <div class="img"><img src="assets/images/img4.png" alt=""></div>
                                     <div class="content">
@@ -561,18 +562,18 @@
                 autoplay: false,
                 smartSpeed: 3000,
                 nav: false,
+                navText: ["<img src='assets/icons/prev.svg' />","<img src='assets/icons/next.svg' />"],
+                nav: true,
                 responsive:{
                     0:{
                         items:1,
                     },
-                    500:{
-                        items:1,
+                    675:{
+                        items:2,
                     },
                     1000:{
                         items:3,
                         margin: 30,
-                        nav: true,
-                        navText: ["<img src='assets/icons/prev.svg' />","<img src='assets/icons/next.svg' />"]
                     }
                 }
             })

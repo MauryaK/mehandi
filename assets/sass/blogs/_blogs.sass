@@ -5,10 +5,17 @@
     .heading
         max-width: 992px 
         margin-bottom: 35px
+        h2
+            @include mediaMax(1200px)
+                font-size: 25px
+                letter-spacing: normal
     .blogFiltr
         position: absolute
         right: 15px
         top: 0
+        @include mediaMax(767px)
+            position: relative
+            right: 0
         .select
             display: flex
             padding: 12px 16px
@@ -39,6 +46,8 @@
                         background: #F9F9F9
 
 .blogListingIn  
+    @include mediaMax(767px)
+        padding-top: 30px
     .blogList
         margin-bottom: 50px
         .flex
@@ -47,14 +56,32 @@
             flex: 0 1 40%
             max-width: 40%
             width: 100%        
-            padding-right: 15px                
+            padding-right: 15px     
+            @include mediaMax(767px)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0           
         .col2
             padding-left: 15px                
             flex: 0 1 60%
             max-width: 60%
-            width: 100%                        
+            width: 100%    
+            @include mediaMax(767px)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0        
+    .img
+        a
+            display: block
+            img
+                @include mediaMax(767px)
+                    display: block
+                    margin: 0 auto            
     .content
         position: relative
+        @include mediaMax(767px)
+            padding-top: 25px
+            text-align: center
         .label
             display: inline-flex
             padding: 10px 28px
@@ -70,22 +97,40 @@
             line-height: normal
             letter-spacing: 0.6px
             margin-bottom: 15px
+            @include mediaMax(1200px)
+                padding: 6px 22px
+                font-size: 14px
+                font-weight: 600
+                letter-spacing: normal
         .blogHed
             color: $green
-            font-size: 34px
             font-style: normal
-            font-weight: 900
             line-height: normal
+            font-size: 34px
+            font-weight: 900
             letter-spacing: 1.02px
             margin-bottom: 15px
+            @include mediaMax(1200px)
+                font-size: 28px
+                font-weight: 700
+                letter-spacing: normal
+                line-height: 1.2
+            @include mediaMax(991px)
+                font-size: 22px
+                font-weight: 700
         p
             color: #7A7A7A
-            font-size: 18px
             font-style: normal
-            font-weight: 600
             line-height: 32px /* 177.778% */
+            font-size: 18px
+            font-weight: 600
             letter-spacing: 0.54px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                font-size: 16px
+                font-weight: 500
+                letter-spacing: normal
+                line-height: 1.4
         .avtoar
             display: flex
             gap: 0 10px
@@ -122,8 +167,12 @@
 
 .blogInMoreNew            
     padding: 60px 0
+    @include mediaMax(675px)
+        padding-bottom: 0
     .heading
         margin-bottom: 60px
+        @include mediaMax(991px)
+            text-align: center
     .flex
         align-items: center
         margin-bottom: 40px
@@ -131,18 +180,31 @@
         flex: 0 1 30%
         max-width: 30%
         width: 100%        
-        padding-right: 15px                
+        padding-right: 15px   
+        @include mediaMax(675px)
+            flex: 0 1 100%
+            max-width: 100%
+            padding: 0             
     .col2
         padding-left: 15px                
         flex: 0 1 70%
         max-width: 70%
         width: 100%       
+        @include mediaMax(675px)
+            flex: 0 1 100%
+            max-width: 100%
+            padding: 0
     .img
         display: block
         img
             display: block
             max-width: 100%
+            @include mediaMax(675px)
+                margin: 0 auto
     .content
+        @include mediaMax(675px)
+            padding: 15px 0
+            text-align: center
         .bloghed
             color: #2E522A
             font-size: 34px
@@ -151,6 +213,14 @@
             line-height: normal
             letter-spacing: 1.02px
             margin-bottom: 10px
+            @include mediaMax(1200px)
+                font-size: 28px
+                font-weight: 700
+                letter-spacing: normal
+                line-height: 1.2
+            @include mediaMax(991px)
+                font-size: 22px
+                font-weight: 700
         p
             color: #7A7A7A
             font-size: 18px
@@ -159,6 +229,11 @@
             line-height: 32px /* 177.778% */
             letter-spacing: 0.54px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                font-size: 16px
+                font-weight: 500
+                letter-spacing: normal
+                line-height: 1.4
         .button
             border-color: #E8E8EA
             color: $green
@@ -172,16 +247,31 @@
 
 .blogDetailSecA
     padding: 60px 0
+    @include mediaMax(675px)
+        padding: 30px 0
     .asdeLeft
         flex: 0 1 70%
         max-width: 70%
         width: 100%
         padding-right: 10px
+        @include mediaMax(991px)
+            padding-right: 25px
+        @include mediaMax(767px)
+            flex: 0 1 100%
+            max-width: 100%
+            width: 100%
+            padding-right: 0px
     .asdeRight
         flex: 0 1 30%
         max-width: 30%
         width: 100%
         padding-left: 20px
+        @include mediaMax(991px)
+            padding: 0
+        @include mediaMax(767px)
+            flex: 0 1 100%
+            max-width: 100%
+            width: 100%
 
 
 .blogDetailin
@@ -194,6 +284,13 @@
             line-height: normal
             letter-spacing: 1.18px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                font-size: 25px
+                line-height: 1.2
+                letter-spacing: normal
+            @include mediaMax(675px)
+                font-size: 18px
+                text-align: center
         .img
             margin-bottom: 20px
             img
@@ -201,12 +298,15 @@
                 width: 100%        
         p
             color: #7A7A7A
-            font-size: 18px
             font-style: normal
             font-weight: 600
+            font-size: 18px
             line-height: 32px /* 177.778% */
             letter-spacing: 0.54px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                font-size: 16px
+                line-height: 1.5
         .note
             display: flex
             padding: 16px 20px
@@ -224,12 +324,25 @@
                 line-height: 32px /* 177.778% */
                 letter-spacing: 0.54px
                 margin: 0
+                @include mediaMax(1200px)
+                    font-size: 16px
+                    line-height: 1.5
 
 .asideBarSLtr   
-    padding-top: 130px             
+    padding-top: 130px      
+    @include mediaMax(767px)
+        padding-top: 25px  
+        display: flex
+        flex-wrap: wrap
     .cardOne
         padding-bottom: 60px
         border-bottom: 1px solid #E8E8EA
+        @include mediaMax(1200px)
+            padding-bottom: 30px
+        @include mediaMax(767px)
+            width: 50%
+        @include mediaMax(675px)
+            width: 100%
         .img
             display: block
             margin-bottom: 15px
@@ -237,22 +350,31 @@
                 width: 100%
                 display: block
         .content
+            @include mediaMax(991px)
+                text-align: center
             h4
                 color: #2E522A
-                font-size: 21px
                 font-style: normal
                 font-weight: 800
                 line-height: normal
                 letter-spacing: 0.63px
+                font-size: 21px
                 margin-bottom: 15px
+                @include mediaMax(1200px)
+                    letter-spacing: normal
+                    font-size: 18px
             p
                 color: #7A7A7A
-                font-size: 18px
                 font-style: normal
                 font-weight: 600
+                font-size: 18px
                 line-height: 32px /* 177.778% */
                 letter-spacing: 0.54px
                 margin-bottom: 15px
+                @include mediaMax(1200px)
+                    font-size: 16px
+                    line-height: 1.4
+                    letter-spacing: normal
             .button
                 border-color: #E8E8EA
                 color: $green
@@ -265,18 +387,38 @@
                 letter-spacing: 0.48px
     .cardTwo
         padding-top: 55px
+        @include mediaMax(991px)
+            padding-top: 25px
         .cardttIt
+            @include mediaMax(767px)
+                display: flex
+                flex-wrap: wrap
             .flex
                 margin-bottom: 45px
+                @include mediaMax(767px)
+                    width: 50%
+                    padding: 8px
             .img
                 flex: 0 1 30%
                 max-width: 30%
                 width: 100%
+                @include mediaMax(991px)
+                    flex: 0 1 100%
+                    max-width: 100%
+                img
+                    width: 100%
             .content
                 flex: 0 1 70%
                 max-width: 70%
                 width: 100%
                 padding-left: 20px
+                @include mediaMax(991px)
+                    flex: 0 1 100%
+                    max-width: 100%
+                    padding: 0
+                    text-align: center
+                @include mediaMax(767px)
+                    padding: 15px 0
                 h6
                     color: #2E522A
                     font-size: 14px
@@ -298,10 +440,15 @@
     .cardPopul
         background: #FDFEF6
         padding: 25px
+        @include mediaMax(1200px)
+            padding: 15px 0
+        @include mediaMax(767px)
+            text-align: center
         .tabPop
             display: flex
             gap: 0 10px
             margin-bottom: 20px
+            
         .button
             border-color: #E8E8EA
             color: $green
@@ -313,6 +460,11 @@
                 color: $white
         .img
             margin-bottom: 30px
+            @include mediaMax(1200px)
+                margin-bottom: 15px
+                line-height: 0
+            img
+                width: 100%
         h4
             color: $green
             font-size: 24px
@@ -321,21 +473,34 @@
             line-height: normal
             letter-spacing: 0.72px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                letter-spacing: normal
+                font-size: 18px
+                margin-bottom: 12px
+
         p
             color: #7A7A7A
-            font-size: 18px
             font-style: normal
             font-weight: 600
+            font-size: 18px
             line-height: 32px /* 177.778% */
             letter-spacing: 0.54px
             margin-bottom: 20px
+            @include mediaMax(1200px)
+                font-size: 16px
+                line-height: 1.4
+                letter-spacing: normal
             b
                 color: #1E1E1E
-                font-size: 18px
                 font-style: italic
                 font-weight: 700
                 line-height: 28px /* 155.556% */
+                font-size: 18px
                 letter-spacing: 0.54px
+                @include mediaMax(1200px)
+                    font-size: 16px
+                    letter-spacing: normal
+                    line-height: 1.4
         .button
             display: inline-block
 
