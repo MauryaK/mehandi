@@ -326,7 +326,7 @@
                         <div class="button" data-target="videoGall">Videos</div>
                     </div>
                 </div> 
-                <div class="photogal">
+                <div class="gallMengan photogal" data-sec="photogal">
                     <div class="flex">
                         <div class="col">
                             <a href=""><img src="assets/images/p7.jpg" alt=""></a>
@@ -347,25 +347,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="videoGall">
+                <div class="gallMengan videoGall" data-sec="videoGall">
                     <div class="container">
                         <div class="flex">
                             <div class="col">
                                 <div class="card">
                                     <div class="img"><img src="assets/images/fo1.png" alt=""></div>
-                                    <div class="icon"><img src="assets/icons/play.svg" alt=""><p>Play Video</p></div>
+                                    <div class="icon modeltrvid" data-video="https://www.youtube.com/embed/qtOhNwhi8TE?autoplay=1"><img src="assets/icons/play.svg" alt=""><p>Play Video</p></div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
                                     <div class="img"><img src="assets/images/fo2.png" alt=""></div>
-                                    <div class="icon"><img src="assets/icons/play.svg" alt=""><p>Play Video</p></div>
+                                    <div class="icon modeltrvid" data-video="https://www.youtube.com/embed/qtOhNwhi8TE?autoplay=1"><img src="assets/icons/play.svg" alt=""><p>Play Video</p></div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
                                     <div class="img"><img src="assets/images/fo3.png" alt=""></div>
-                                    <div class="icon"><img src="assets/icons/play.svg" alt=""><p>Play Video</p></div>
+                                    <div class="icon modeltrvid" data-video="https://www.youtube.com/embed/qtOhNwhi8TE?autoplay=1"><img src="assets/icons/play.svg" alt=""><p>Play Video</p></div>
                                 </div>
                             </div>
                         </div>
@@ -725,9 +725,45 @@
             </div>
         </div>
     </div>
-    <div class="overlay close-model"></div>
+    <div class="Model_Video">
+        <div class="closeModel closevid-model"><img src="assets/icons/closw.svg" alt=""></div>
+        <iframe id="iframe1" class="" loading="lazy" allow="autoplay;" src=""></iframe>
+        
+    </div>
+    <div class="overlay close-model">
+    </div>
+
     <script>
         $(function(){
+
+            $('.tabGal .button').on('click', function(e){
+                e.preventDefault();
+                $(this).addClass('active').siblings().removeClass('active');
+                var c = $(this).data('target');
+                $(".gallMengan").each(function(){
+                    console.log($(this).attr('data-sec'))
+                    if($(this).attr('data-sec') == c){
+                        $(this).show()
+                    }
+                    else{
+                        $(this).hide()
+                    }
+                })
+            })
+            $('.modeltrvid').on('click', function(e){
+                e.preventDefault();
+                var v = $(this).data('video');
+                $('.Model_Video').addClass('is-open');
+                $('.overlay').addClass('active');
+                $('#iframe1').attr('src', v)
+            })
+            $('.closevid-model').on('click', function(e){
+                e.preventDefault();
+                var v = $(this).data('video');
+                $('.Model_Video').removeClass('is-open');
+                $('.overlay').removeClass('active');
+                $('#iframe1').attr('src', " ")
+            });
 
             $('.btn_enquiry').on('click', function(e){
                 e.preventDefault();

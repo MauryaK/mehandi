@@ -77,6 +77,9 @@ $(function(){
         e.preventDefault();
         $("body").removeClass('model-active');
         $(".modelHumburgerMenu").removeClass('activeModel');
+        $('.Model_Video').removeClass('is-open');
+        $('.overlay').removeClass('active');
+        $('#iframe1').attr('src', " ")
     })
   
 })
