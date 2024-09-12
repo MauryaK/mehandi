@@ -19,7 +19,7 @@
     <!-- jQuery v3.7.1 -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 </head>
-<body>
+<body >
     <!-- Header  -->
     <header>
         <!-- Top Header -->
@@ -114,7 +114,30 @@
                     </div>
                     <div class="rightnav">
                         <a href="" class="button">Get in Touch</a>
-                        <a href="" class="button">Shop Now</a>
+                        <div href="" class="button dropdownShi">Shop Now
+                            <div class="dropdownChop">
+                                <div class="wrapdro">
+                                    <div class="card">
+                                        <div class="cardHed">
+                                            <div class="welc">Welcome</div>
+                                            <p>To access account and manage orders</p>
+                                            <a href="" class="log">Login/Sign Up</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="navli">
+                                                <a href="">My Profile</a>
+                                                <a href="">My Wishlist</a>
+                                                <a href="">My Orders</a>
+                                                <a href="">Saved Address</a>
+                                                <a href="">Track Orders</a>
+                                                <a href="">Coupons</a>
+                                                <a href="">Contact Us</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="" class="icon"><img src="assets/icons/user.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/wishlist.svg" alt=""></a>
                         <a href="" class="icon"><img src="assets/icons/cart.svg" alt=""></a>
@@ -130,6 +153,42 @@
         <!-- Banner -->
         <div class="banner">
             <div class="owl-carousel slideA">
+                <div class="item">
+                    <div class="img"><img src="assets/images/banner.jpg" alt=""></div>
+                    <div class="banner-content">
+                        <div class="container-fluid">
+                            <div class="content">
+                                <h1>Lorem Ipsum is simply dummy text of the printing</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="button">Get In Touch</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="assets/images/banner.jpg" alt=""></div>
+                    <div class="banner-content">
+                        <div class="container-fluid">
+                            <div class="content">
+                                <h1>Lorem Ipsum is simply dummy text of the printing</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="button">Get In Touch</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="assets/images/banner.jpg" alt=""></div>
+                    <div class="banner-content">
+                        <div class="container-fluid">
+                            <div class="content">
+                                <h1>Lorem Ipsum is simply dummy text of the printing</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="button">Get In Touch</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="item">
                     <div class="img"><img src="assets/images/banner.jpg" alt=""></div>
                     <div class="banner-content">
@@ -251,6 +310,39 @@
                     </div>
                     <div class="slide">
                         <div class="owl-carousel SLideB">
+                            <div class="item">
+                                <div class="img">
+                                    <img src="assets/images/story1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title">2019</div>
+                                    <p>Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting
+                                        industry.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="assets/images/story1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title">2019</div>
+                                    <p>Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting
+                                        industry.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="assets/images/story2.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title">2024</div>
+                                    <p>Lorem Ipsum is simply dummy
+                                        text of the printing and typesetting
+                                        industry.</p>
+                                </div>
+                            </div>
                             <div class="item">
                                 <div class="img">
                                     <img src="assets/images/story1.jpg" alt="">
@@ -707,6 +799,28 @@
             </div>
         </div>
     </model>
+
+    <div class="modelLogin">
+        <div class="modelBody">
+            <div class="closeModel close-model"><img src="assets/icons/closw.svg" alt=""></div>
+            <div class="title">Login/Sign-Up</div>
+            <p>Login or Sign-Up to your account</p>
+
+            <div class="form formlabe">
+                <div class="form-group">
+                    <input type="text" class="input-control" />
+                    <label for="">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="input-control" />
+                    <label for="">Password</label>
+                </div>
+                <div class="form-btn">
+                    <button class="btn button">Login or Sign-Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="overlay close-model"></div>
     
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
@@ -717,7 +831,7 @@
             $('.slideA').owlCarousel({
                 loop: true,
                 margin: 0,
-                dots: false,
+                dots: true,
                 autoplay: true,
                 smartSpeed: 3000,
                 nav: false,
@@ -736,7 +850,7 @@
             $('.SLideB').owlCarousel({
                 loop: true,
                 margin: 0,
-                dots: false,
+                dots: true,
                 autoplay: false,
                 smartSpeed: 3000,
                 nav: false,
@@ -749,6 +863,7 @@
                     },
                     992:{
                         items:3,
+                        center: true
                     }
                 }
             })

@@ -189,9 +189,22 @@
     .heading
         max-width: 982px
         width: 100%
-        margin: 0 auto 45px
+        margin: 0 auto 0
         h2,p
             color: $white
+    .owl-stage-outer
+        padding: 55px 0
+        .owl-item
+            .item
+                scale: .6
+                transition: .8s ease .5s
+            &.center
+                .item
+                    scale: 1
+                    transition-delay: .5s
+    .owl-carousel
+        .owl-dots
+            bottom: 0px
     .item
         padding: 25px
         position: relative
@@ -252,6 +265,7 @@
             left: 0
             right: 0
             z-index: 1
+            display: none
             @include mediaMax(991px)
                 display: none
 

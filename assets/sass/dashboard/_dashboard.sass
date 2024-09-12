@@ -1,0 +1,628 @@
+.dashBoardMain
+    background: $white
+    padding: 80px 0
+    .asideLeft
+        width: 320px
+        border-right: 1px solid #E7E7E7
+        padding-right: 30px
+    .asideRight
+        flex: 1
+        flex-grow: 1
+    .asideHed
+        padding-bottom: 12px
+        margin-bottom: 30px
+        border-bottom:1px solid #E7E7E7
+        &.border-0
+            border: 0
+        .asideTitle
+            color: #1E1E1E
+            font-size: 30px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+            letter-spacing: 0.6px
+            span
+                color: #60A814
+                font-size: 15px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.3px
+        p
+            color: #585858
+            font-size: 18px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            letter-spacing: 0.36px
+    .asideNav
+        ul
+            li
+                display: block
+                a
+                    display: block
+                    color: #1E1E1E
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 112% /* 17.92px */
+                    letter-spacing: 0.32px
+                    padding: 9.5px 0
+                    transition: .5s ease
+                    &.current,&:hover
+                        color: $lgreen
+
+.dashForm
+    .form-group
+        position: relative
+        margin-bottom: 25px
+        .input-control
+            height: 64px
+            border-radius: 18px
+            border: 1px solid #E8E8E8
+            background: #FFF
+            max-width: 739px
+            width: 100%
+            padding: 20px
+            color: #1E1E1E
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 112% /* 17.92px */
+            letter-spacing: 0.32px
+        label
+            display: inline-block
+            position: absolute
+            left: 20px
+            top: 20px
+            color: #7A7A7A
+            font-size: 14px
+            font-style: normal
+            font-weight: 600
+            line-height: 150% /* 21px */
+            letter-spacing: 0.42px
+            transition: .5s ease
+            pointer-events: none
+        &.valid
+            label
+                top: 5px
+    .form-btn
+        display: flex
+        gap: 0 30px
+        .button
+            display: block
+            width: 365px
+            height: 64px
+            flex-shrink: 0
+            text-align: center
+            font-size: 18px
+            font-style: normal
+            font-weight: 800
+            line-height: 150% /* 27px */
+            letter-spacing: 0.54px
+            text-transform: uppercase
+            &.btn-cancel
+                border-radius: 16px
+                border: 1px solid #E8E8E8
+                background: #FFF
+                color: #353535
+            &.btn-Save
+                border-radius: 16px
+                background: $green
+                color: $white
+
+.form-chekBix
+    margin-bottom: 25px
+    ul
+        display: flex
+        gap: 0 40px
+        li
+            label
+                display: flex
+                align-items: center
+                gap: 0 20px
+                cursor: pointer
+                .radio
+                    width: 32px
+                    height: 32px
+                    border: 1px solid #E8E8EA
+                    border-radius: 32px  
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    &::before
+                        content: ""
+                        position: absolute
+                        background: $lgreen
+                        width: 18px
+                        height: 18px
+                        border-radius: 25px
+                        opacity: 0
+                        transition: .5s ease
+
+                span
+                    color: $green
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 800
+                    line-height: 150% /* 27px */
+                    letter-spacing: 0.54px 
+                input[type="radio"]
+                    display: none
+                    &:checked ~ .radio
+                        &::before
+                            opacity: 1
+
+.nordeSpc
+    border-bottom: 1px solid #E8E8EA     
+    margin: 60px 0                   
+.asideRight
+    .asideHed,.dashForm
+        padding-left: 30px                         
+
+.proOverv
+    .wrp
+        display: flex
+        flex-wrap: wrap
+        padding: 18px
+        align-items: center
+        gap: 10px        
+        border-radius: 28px
+        border: 1px solid #E8E8E8
+        background: #FFF
+    .textw
+        padding-left: 35px
+        .txt
+            color: #1E1E1E
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 112% /* 17.92px */
+            letter-spacing: 0.32px
+            padding: 4px 0
+    .txtLin
+        width: 100%
+        text-align: right
+        a
+            display: inline-block
+            color: #60A814
+            font-size: 18px
+            font-style: normal
+            font-weight: 800
+            line-height: normal
+            letter-spacing: 0.36px
+
+.useCOnAddre
+    margin-left: 30px   
+    .col
+        width: 33.33%
+        padding: 20px
+        .card
+            padding: 20px    
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 10px
+            flex-shrink: 0    
+            border-radius: 28px
+            border: 1px solid #E8E8E8
+            background: #FFF
+            p
+                color: #1E1E1E
+                font-size: 22px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.44px
+
+.mywishlisyt
+    margin-left: 30px   
+    .col
+        width: 33.33%
+        padding: 12px                
+    .card
+        border-radius: 24px
+        border: 1px solid #E8E8E8
+        background: #FFF
+        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15)
+        a
+            display: block
+            line-height: 0
+            img
+                width: 100%
+        .content
+            padding: 15px 8px
+            .produnae
+                color: $green
+                font-size: 14px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.42px
+            p
+                color: #7A7A7A
+                font-size: 14px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                letter-spacing: 0.42px
+                margin: 10px 0
+            .price
+                color: $green
+                font-size: 20px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.6px
+                margin-bottom: 18px
+            .button
+                display: flex
+                flex-direction: column
+                gap: 8px
+                border-radius: 16px
+                border: 1px solid var(--Gray-11, #E8E8EA)
+                color: $green
+                text-align: left
+                align-items: center
+                max-width: 150px
+                font-size: 14px
+                font-style: normal
+                padding: 16px 8px
+                font-weight: 700
+                line-height: 112% /* 15.68px */
+                letter-spacing: 0.28px
+                &:hover
+                    background: $green
+                    color: $white
+        &.outof-stock
+            overflow: hidden
+            a.img
+                position: relative
+                .stockOut
+                    position: absolute
+                    inset: 0
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    &::before
+                        content: ""
+                        position: absolute
+                        inset: 0
+                        background: #00000090
+                        backdrop-filter: blur(6px)
+                    p
+                        position: relative
+                        z-index: 1
+                        color: #fff
+                        font-size: 20px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: normal
+                        letter-spacing: normal
+
+
+.filter_wis
+    display: flex
+    align-items: center
+    .search-box
+        position: relative
+        .icon
+            position: absolute
+            left: 20px
+            top: 20px
+        input
+            border-radius: 18px
+            border: 1px solid #E8E8E8
+            background: #FFF
+            padding: 18px
+            padding-left: 50px
+            width: 360px
+    .filterBox
+        position: relative
+        margin-left: 15px
+        .selected
+            display: flex
+            padding: 16px 16px
+            flex-direction: column
+            align-items: center
+            gap: 8px
+            border-radius: 16px
+            background: $green
+            color: $white
+            margin-bottom: 5px
+            cursor: pointer
+        ul
+            position: absolute
+            top: 100%
+            right: 0
+            display: flex
+            flex-direction: column
+            width: 349px
+            padding: 16px
+            align-items: flex-start
+            gap: 10px
+            border-radius: 18px
+            background: #FFF
+            box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.10)
+            display: none
+            li
+                cursor: pointer
+                position: relative
+                padding: 5px 0
+                padding-left: 45px
+                color: #1E1E1E
+                font-size: 16px
+                font-style: normal
+                font-weight: 700
+                margin: 7px 0
+                line-height: 112% /* 17.92px */
+                letter-spacing: 0.32px
+                span
+                    position: absolute
+                    left: 10px
+                    top: 0
+                    width: 24px
+                    height: 24px
+                    border: 1px solid #E8E8EA
+                    border-radius: 25px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    &::before
+                        content: ""
+                        position: absolute
+                        width: 12px
+                        height: 12px
+                        border-radius: 20px
+                        background: $lgreen
+                        top: 5px
+                        opacity: 0
+                &.active
+                    span
+                        &::before
+                            opacity: 1
+.hedflex
+    display: flex
+    justify-content: space-between
+    align-items: center               
+    .addNewAdd
+        background: $green
+
+
+.dileveDashList
+    padding-left: 30px
+    .listItm
+        .title
+            position: relative
+            padding-left: 50px
+            margin-bottom: 20px
+            .icon
+                position: absolute
+                left: 0px
+            .dilTit
+                color: #60A814
+                font-size: 20px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.4px
+            .onDate
+                color: #000
+                font-size: 14px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                letter-spacing: 0.42px
+        .card
+            border-radius: 30px
+            border: 1px solid #E8E8E8
+            background: #FFF
+            padding: 20px
+            .card-body
+                display: flex
+            .img
+                width: 138px
+                height: 138px
+            .txt
+                padding-left: 20px
+            .prodName
+                color: $green
+                font-size: 24px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.72px
+            .prodsort
+                color: #7A7A7A
+                font-size: 14px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                letter-spacing: 0.42px
+                margin: 5px 0 15px
+            .qty
+                color: $green
+                font-size: 18px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.54px
+            .card-footer
+                margin-top: 20px
+                border-top: 1px solid #E7E7E7
+                padding: 15px 0 0
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .rating
+                    display: flex
+                    align-items: center
+                    gap: 0 8px
+                    span
+                        color: $green
+                        font-size: 18px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: normal
+                        letter-spacing: 0.54px
+                .track
+                    display: flex
+                    align-items: center
+                    gap: 0 8px
+                    span
+                        color: $green
+                        font-size: 18px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: normal
+                        letter-spacing: 0.54px
+
+.savedAddList   
+    padding-left: 30px                     
+    .list
+        border: 1px solid #E7E7E7
+        border-radius: 20px
+        .card
+            padding: 25px
+            border-bottom: 1px solid #e7e7e7
+            .card-hed
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding-bottom: 10px
+                label
+                    display: flex
+                    align-items: center
+                    gap: 0 15px
+                    .checkb  
+                        width: 24px
+                        height: 24px
+                        border: 1px solid #E8E8EA
+                        border-radius: 25px
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        &::before
+                            content: ""
+                            position: absolute
+                            width: 12px
+                            height: 12px
+                            border-radius: 20px
+                            background: $lgreen
+                            top: 6px
+                            opacity: 1
+                    span
+                        color: $green
+                        font-size: 18px
+                        font-style: normal
+                        font-weight: 800
+                        line-height: normal
+                        letter-spacing: 0.54px
+                .crdAct
+                    display: flex
+                    gap: 0 5px
+                    a
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        width: 30px
+                        height: 30px
+            .card-body
+                padding: 20px 0 0
+                padding-left: 40px
+                border-top: 1px solid #e7e7e7
+                .name
+                    color: $green
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 800
+                    line-height: 150% /* 27px */
+                    letter-spacing: 0.54px
+                .addred
+                    color: #747474
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                    letter-spacing: 0.48px
+                    margin: 5px 0 8px
+                    max-width: 300px
+                .cont
+                    p
+                        color: #747474
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: normal
+                        letter-spacing: 0.48px
+                        span
+                            color: #353535
+                            font-size: 16px
+                            font-style: normal
+                            font-weight: 600
+                            line-height: normal
+                            letter-spacing: 0.48px
+            
+            &:last-child
+                .card-body
+                    &:last-child
+                        margin-top: 25px
+
+.addNewAddForm
+    padding-left: 30px
+    .card
+        border-radius: 30px
+        border: 1px solid #E8E8E8
+        background: #FFF
+        padding: 25px
+        .card-hed
+            padding-bottom: 15px
+            border-bottom: 1px solid #E8E8E8
+            .title
+                color: $green
+                font-size: 18px
+                font-style: normal
+                font-weight: 800
+                line-height: normal
+                letter-spacing: 0.54px
+        .card-body
+            padding: 30px 0
+            .col2
+                flex: 0 1 50%
+                max-width: 50%
+                padding: 0 8px
+            .col1
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0 8px
+            .form-btn
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                gap: 0 8px
+                .button
+                    &.cler
+                        border-radius: 16px
+                        border: 1px solid #E8E8E8
+                        background: #FFF
+                        color: #353535
+                        text-align: center
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: 150%
+                        letter-spacing: 0.54px
+                    &.save
+                        border-radius: 16px
+                        border: 1px solid $green
+                        background: $green
+                        color: $white
+                        text-align: center
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 600
+                        line-height: 150%
+                        letter-spacing: 0.54px

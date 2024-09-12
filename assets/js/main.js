@@ -1,7 +1,15 @@
 $(function(){
     const banner = $(".banner");
     banner.length > 0 ? "" : $('body').addClass('no-banner');
-
+    $('.input-control,.form-control').each(function () {
+        $(this).val() != '' ? $(this).parent('.form-group').addClass('valid') : $(this).parent('.form-group').removeClass('valid');
+    });
+    $('.input-control,.form-control').on('change', function () {
+        $(this).val() != '' ? $(this).parent('.form-group').addClass('valid') : $(this).parent('.form-group').removeClass('valid');
+    });
+    $('.input-control,.form-control').on('keyup', function () {
+        $(this).val() != '' ? $(this).parent('.form-group').addClass('valid') : $(this).parent('.form-group').removeClass('valid');
+    });
     $('.slideC').owlCarousel({
         loop: true,
         margin: 0,
@@ -70,5 +78,5 @@ $(function(){
         $("body").removeClass('model-active');
         $(".modelHumburgerMenu").removeClass('activeModel');
     })
-    
+  
 })

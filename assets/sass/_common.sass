@@ -265,3 +265,195 @@ select
     .overlay
         opacity: .5
         pointer-events: all
+
+.form.formlabe
+    .form-group
+        position: relative
+        .form-control,.input-control
+            display: block
+            padding: 20px 16px 6px
+            color: #1E1E1E
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150% /* 24px */
+            letter-spacing: 0.48px
+            &:focus ~ label
+                top: 4px
+                font-size: 11px
+                
+        label
+            position: absolute
+            left: 15px
+            top: 17px 
+            color: #9F9F9F
+            font-size: 12.772px
+            font-style: normal
+            font-weight: 600
+            line-height: 150% /* 19.158px */
+            letter-spacing: 0.383px  
+            pointer-events: none
+            transition: .5s ease
+        &.valid 
+            label
+                top: 4px
+                font-size: 11px
+
+.modelLogin                
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: $white
+    padding: 25px
+    width: 644px
+    z-index: 4
+    border-radius: 18px
+    display: none
+    .modelBody
+        max-width: 500px
+        width: 100%
+        margin: 0 auto
+        .closeModel
+            position: absolute
+            right: 20px
+            top: 8px
+            width: 40px
+            height: 40px
+            cursor: pointer
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            img
+                width: 26px
+                display: block
+        .title
+            color: $green
+            text-align: center
+            font-size: 40px
+            font-style: normal
+            font-weight: 900
+            line-height: normal
+            letter-spacing: 1.2px
+        p
+            color: #1E1E1E
+            text-align: center
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 112% /* 17.92px */
+            letter-spacing: 0.32px
+        .form.formlabe
+            margin-top: 35px
+            .form-group
+                .input-control
+                    border: 1px solid #E8E8E8
+                    width: 100%
+                    border-radius: 16px
+                    padding: 20px 16px 10px
+            .form-btn
+                margin-top: 20px
+                .button
+                    border: 1px solid $green
+                    color: $green
+                    text-align: center
+                    background: $white
+                    width: 100%
+                    align-items: center
+                    justify-content: center
+                    padding: 14px 20px
+.model-active
+    .modelProduEnq   
+        top: 50%
+        transform: translate(-50%, -50%)
+.modelProduEnq                
+    position: fixed
+    top: 100%
+    left: 50%
+    transform: translate(-50%, 100%)
+    background: $white
+    width: 986px
+    z-index: 4
+    border-radius: 18px
+    transition: .5s ease
+    .modelBody
+        background: $white
+        border-radius: 50px
+        padding: 30px 50px
+        .closeModel
+            position: absolute
+            right: 20px
+            top: 8px
+            width: 40px
+            height: 40px
+            cursor: pointer
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            img
+                width: 26px
+                display: block
+        .title
+            color: #2E522A
+            font-size: 42px
+            font-style: normal
+            font-weight: 800
+            text-align: center
+            line-height: normal
+        p
+            color: $lgreen
+            text-align: center
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 150% /* 27px */
+        .modeDev
+            margin-top: 40px
+            .col
+                width: 50%
+        .form.formlabe
+            .col1
+                width: 100%
+                padding: 0 7px
+            .col2
+                padding: 0 7px
+                width: 50%
+        .form-btn
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            gap: 0 8px
+            .button
+                padding: 13px 23px
+                flex-direction: column
+                align-items: center
+                gap: 8px
+                border-radius: 16px
+                &.cler
+                    color: #2E522A
+                    text-align: center
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 150% /* 24px */
+                    letter-spacing: 0.48px
+                &.save
+                    background: #2E522A
+.owl-carousel 
+    .owl-dots
+        position: absolute
+        bottom: 30px
+        left: 0
+        right: 0
+        text-align: center
+        .owl-dot 
+            width: 15px
+            height: 15px
+            border-radius: 15px
+            background: #FFF
+            margin: 0 6px
+            opacity: .2
+            &.active
+                opacity: 1
