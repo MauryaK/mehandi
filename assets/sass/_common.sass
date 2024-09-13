@@ -304,15 +304,18 @@ select
 
 .modelLogin                
     position: fixed
-    top: 50%
+    top: 100%
     left: 50%
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, 120%)
     background: $white
     padding: 25px
     width: 644px
     z-index: 4
     border-radius: 18px
-    display: none
+    transition: .5s ease
+    &.is-open
+        top: 50%
+        transform: translate(-50%, -50%)
     .modelBody
         max-width: 500px
         width: 100%
@@ -366,10 +369,8 @@ select
                     align-items: center
                     justify-content: center
                     padding: 14px 20px
-.model-active
-    .modelProduEnq   
-        top: 50%
-        transform: translate(-50%, -50%)
+
+    
 .modelProduEnq                
     position: fixed
     top: 100%

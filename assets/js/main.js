@@ -79,7 +79,15 @@ $(function(){
         $(".modelHumburgerMenu").removeClass('activeModel');
         $('.Model_Video').removeClass('is-open');
         $('.overlay').removeClass('active');
-        $('#iframe1').attr('src', " ")
+        $('#iframe1').attr('src', " ");
+        $('.model').removeClass('is-open');
+    })
+
+    $('.model-open').on('click', function(e){
+        e.preventDefault();
+        var model = $(this).data('model');
+        $("body").addClass('model-active');
+        $(model).addClass('is-open')
     })
   
 })
